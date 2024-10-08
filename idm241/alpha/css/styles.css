@@ -26,7 +26,7 @@ h3 {
 
 .trigger, .rules, .feedback, .loopsModes {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
     margin: 10px 0;
     background-color: #f9f9f9;
