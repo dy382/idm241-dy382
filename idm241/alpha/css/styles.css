@@ -26,7 +26,7 @@ h3 {
 
 .trigger, .rules, .feedback, .loopsModes {
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
     margin: 10px 0;
     background-color: #f9f9f9;
@@ -51,5 +51,5 @@ h3 {
 .video video {
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 30px;
 }
