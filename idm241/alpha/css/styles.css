@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e60023;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e60023;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    color:#e60023;
+    font-size: 1.5em;
+}
+
+.trigger, .rules, .feedback, .loopsModes {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.trigger:hover {
+    background-color: #eee;
+}
+
+.rules:hover {
+    background-color: #eee;
+}
+
+.feedback:hover {
+    background-color: #eee;
+}
+
+.loopsModes:hover {
+    background-color: #eee;
+}
+
+.video video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
