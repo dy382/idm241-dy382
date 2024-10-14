@@ -70,9 +70,12 @@ h3 {
 
 .Save:hover {
     background-color: #B60000;
-    transform: scale(0.95);
 }
 
 .Save:active {
     transform: scale(0.9);
+}
+
+.Save.clicked {
+    background-color: black;
 }
