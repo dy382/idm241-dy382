@@ -53,3 +53,28 @@ h3 {
     margin: 0 auto;
     border-radius: 30px;
 }
+
+.Save {
+    border: none;
+    color: white;
+    background-color:#e60023;
+    padding: 13px 18px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Save:hover{
+    background-color: #B60000;
+}
+
+.Save:active{
+    padding: 11px 16px;
+}
