@@ -21,12 +21,17 @@ a:hover {
 
 h2 {
     color:#e60023;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 h3 {
     color:#e60023;
-    font-size: 1em;
+    font-size: 18px;
+}
+
+p {
+    color: black;
+    font-size: 16px;
 }
 
 .triggers, .rules, .feedback, .loopsModes {
