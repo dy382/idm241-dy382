@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./build.css">
+    <title>Alpha Description</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<h1>Beta Description</h1>
+<p>url: <a href="https://www.pinterest.com/" target="_blank">https://www.pinterest.com/</a></p>
+
+<div class="grid-container">
+<div class="triggers"> 
+<h2>TRIGGERS</h2>
+
+<h3>Overall Card</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+    </ul>
+
+
+<h3>Save</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse Down</li>
+        <li>Mouse Up</li>
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse Down</li>
+        <li>Mouse Up</li>
+    </ul>
+
+<h3>Profile</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse Down</li>
+        <li>Mouse Up</li>
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Mouse Down</li>
+        <li>Mouse Up</li>
+    </ul>
+</div>
+
+
+<div class="rules">
+<h2>RULES</h2>
+
+<h3>Overall Card</h3>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Card color value increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Card color value increases by 25%</li>
+            </ul>
+    </ul>
+
+<h3>Save</h3>
+    <p>Default</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button saturation returns to original decreases by 25% </li>
+            </ul>
+        <li>Mouse Down</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Button color changes to black with the words "Saved"</li>
+                <li>Button returns to original size</li>
+                <li>Button onclick popup toggle on</li>
+                <li>Database record flag set to TRUE</li>
+            </ul>   
+    </ul>
+<p>Active</p>
+<ul>
+    <li>Hover ON</li>
+        <ul>
+            <li>Cursor changes to finger</li>
+        </ul>
+    <li>Hover OFF</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+        </ul>
+    <li>Mouse Down</li>
+        <ul>
+            <li>Button size decreases by 25%</li>
+        </ul>
+    <li>Mouse Up</li>
+        <ul>
+            <li>Button color changes back to red with the words "Save"</li>
+            <li>Button returns to original size</li>
+            <li>Button onclick popup toggle on</li>
+            <li>Database record flag set to FALSE</li>
+        </ul>   
+</ul>
+
+<h3>Profile</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>background opacity increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>background opacity decreases by 25%</li>
+            </ul>
+        <li>Mouse Down</li>
+                <ul>
+            <li>Button size decreases by 25%</li>
+                </ul>
+        <li>Mouse Up</li>
+                <ul>
+            <li>background increases to 100% black opacity</li>
+            <li>Button onclick popup toggle on</li>
+            <li>Save board pops up</li>
+            <li>"Saved to Profile" popup appears on screen bottom</li>
+                </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Mouse Down</li>
+                <ul>
+            <li>Button size decreases by 25%</li>
+                </ul>
+        <li>Mouse Up</li>
+                <ul>
+            <li>background opacity returns to 0%</li>
+            <li>Button onclick popup toggle off</li>
+            <li>"Pin Removed" popup appears on screen bottom</li>
+                </ul>
+    </ul>
+
+</div>
+
+<div class="feedback">
+<h2>FEEDBACK</h2>
+
+<h3>Overall Card</h3>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button, Profile button, download button, and settings button appear</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button, Profile button, download button, and settings button disappear</li>
+            </ul>
+    </ul>
+
+    <h3>Save</h3>
+    <p>Default</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button saturation returns to original decreases by 25% </li>
+            </ul>
+        <li>Mouse Down</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Button color changes to black with the words "Saved"</li>
+                <li>Button returns to original size</li>
+                <li>"Saved to Profile" popup appears on screen bottom</li>
+            </ul>   
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse Down</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Button color changes back to red with the words "Save"</li>
+                <li>Button returns to original size</li>
+                <li>"Pin Removed" popup appears on screen bottom</li>
+            </ul>   
+    </ul>
+
+
+<h3>Profile</h3>
+<p>Default</p>
+<ul> 
+    <li>Hover ON</li>
+        <ul>
+            <li>background opacity increases by 25%</li>
+        </ul>
+    <li>Hover OFF</li>
+        <ul>
+            <li>background opacity decreases by 25%</li>
+        </ul>
+    <li>Mouse Down</li>
+            <ul>
+        <li>Button size decreases by 25%</li>
+            </ul>
+    <li>Mouse Up</li>
+            <ul>
+        <li>background increases to 100% black opacity</li>
+        <li>Save board pops up</li>
+            </ul>
+</ul>
+
+<p>Active</p>
+<ul>
+    <li>Mouse Down</li>
+            <ul>
+        <li>Button size decreases by 25%</li>
+            </ul>
+    <li>Mouse Up</li>
+            <ul>
+        <li>background opacity returns to 0%</li>
+            </ul>
+</ul>
+
+</div>
+
+<div class="loopsModes"> 
+    <h2>LOOPS AND MODES</h2>
+<p>Loops</p>
+    <ul>
+        <li>none</li>
+    </ul>
+<p>Modes</p>
+    <ul> 
+        <li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
+        <li>When "Save" is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
+        <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li> 
+    </ul>
+</div>
+</div>
+
+<section class="video">
+    <video width="500px" controls>
+        <source src="./images/betaScreenRecord.mov" type="video/mp4">
+    </video>
+</section>
+
+</body>
+</html>

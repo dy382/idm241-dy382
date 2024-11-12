@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #e60023;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e60023;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color:#e60023;
+    font-size: 20px;
+}
+
+h3 {
+    color:#e60023;
+    font-size: 18px;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+}
+
+.triggers, .rules, .feedback, .loopsModes {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.triggers:hover {
+    background-color: #eee;
+}
+
+.rules:hover {
+    background-color: #eee;
+}
+
+.feedback:hover {
+    background-color: #eee;
+}
+
+.loopsModes:hover {
+    background-color: #eee;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1224px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 868px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.video video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.Save {
+    border: none;
+    color: white;
+    background-color:#e60023;
+    padding: 16px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.Save:hover {
+    background-color: #B60000;
+}
+
+.Save:active {
+    transform: scale(0.9);
+}
+
+.Save.clicked {
+    background-color: black;
+}
+.popup {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.popup .undo {
+    background: white;
+    font-weight: 800;
+    border: none;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 13px 10px;
+    margin-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cover {
+    width: 40px;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 15px;
+}
