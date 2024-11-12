@@ -2,18 +2,34 @@
 <html>
 <head>
     <link rel="stylesheet" href="./build.css">
-    <title>Alpha - Build</title>
+    <title>Beta - Build</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 <h1>Beta - Build</h1>
 
-<center>
-    <button id="saveButton" class="Save">Save</button>
+<div class="container">
+<section class="beta-card">
+<center>        
+    <img src="./images/naturepic.jpg" alt="Nature scene" class="card-image">
+    <div class="card-header">
+        <button id="profileButton" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
+        <button id="saveButton" class="Save">Save</button>
+      </div>
+
+
+
+        <div class="card-footer">
+          <button class="icon-button"><img src="./images/upload.png"></button>
+          <button class="icon-button"><img src="./images/more.png"></button>
+        </div>
+</center>
+</section>
+</div>
+
     <div id="popup" class="popup hidden">
         <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
     </div>
-</center>
 
 <div class="grid-container">
 <div class="triggers"> 
