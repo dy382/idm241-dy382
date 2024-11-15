@@ -13,21 +13,44 @@
 <center>        
     <img src="./images/naturepic.jpg" alt="Nature scene" class="card-image">
     <div class="card-header">
+        
         <button id="profileButton" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
+
         <button id="saveButton" class="Save">Save</button>
       </div>
 
-
-
-        <div class="card-footer">
-          <button class="icon-button"><img src="./images/upload.png"></button>
-          <button class="icon-button"><img src="./images/more.png"></button>
-        </div>
 </center>
 </section>
 </div>
+    <div class="profile-popup-background" id="profilePopup">
+        <div class="profilePopup">
+            <h1>Save</h1>
+            <input type="text" placeholder="Search">
+            <h2>Top choices</h2>
 
-    <div id="popup" class="popup hidden">
+            <div class="option">
+                <img src="./images/boardcover.jpg" alt="Drawing Thumbnail">
+                <h3>Drawing</h3>
+            </div>
+            <div class="option">
+                <img src="./images/boardcover.jpg" alt="Inspiration Thumbnail">
+                <h3>Inspiration</h3>
+            </div>
+
+            <h2>All boards</h2>
+            <div class="option">
+                <img src="./images/boardcover.jpg" alt="Asiacore Thumbnail">
+                <h3>Asiacore</h3>
+            </div>
+
+            <div class="create-board">
+                <img src="./images/boardcover.jpg" alt="Create Board Icon">
+                <h3>Create board</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="savePopup" class="popup hidden">
         <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
     </div>
 
@@ -294,8 +317,9 @@
 <p>Modes</p>
     <ul> 
         <li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
-        <li>When "Save" is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
-        <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li> 
+        <li>When "Save" is clicked, a popup with "Save to Profile 'Undo'" appears</li>
+        <li>When "Unsave" is clicked, another opup with the text "Pin Removed!" appears</li> 
+        <li>When Profile drop down is clicked, a popup appears with board saving options</li>
     </ul>
 </div>
 </div>

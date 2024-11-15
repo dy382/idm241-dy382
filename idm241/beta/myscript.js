@@ -1,16 +1,23 @@
 document.getElementById('saveButton').addEventListener('click', function() {
     this.classList.toggle('clicked');
-    let popup = document.getElementById('popup');
+    let savePopup = document.getElementById('savePopup');
 
     if (this.classList.contains('clicked')) {
         this.textContent = 'Saved';
-        popup.classList.remove('hidden');
+        savePopup.classList.remove('hidden');
     } else {
         this.textContent = 'Save';
-        popup.classList.add('hidden');
+        savePopup.classList.add('hidden');
     }
 });
 
 document.getElementById('profileButton').addEventListener('click', function() {
     this.classList.toggle('clicked');
+    let profilePopup = document.getElementById('profilePopup');
+
+    if (this.classList.contains('clicked')) {
+        profilePopup.classList.remove('hidden');
+    } else {
+        profilePopup.classList.add('hidden');
+    }
 });
