@@ -145,11 +145,17 @@ p {
     margin-right: 15px;
 }
 
-.container {
+.pre-container {
 display: flex;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+}
+
+.container {
 margin: 0;
+width: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
 }
 
 .beta-card {
@@ -158,6 +164,11 @@ margin: 0;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+}
+
+.card-image {
+    width: 250px;
+    height: 450px;
 }
 
 .beta-card:hover {
@@ -244,24 +255,12 @@ filter:brightness(85%)
 }
 
 
-/* Profile Popup Background 
-.profile-popup-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-}*/
+/* Profile Popup Background */
 
 .profile-popup-background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 300px;
+    height: auto;
+    position: relative;
 }
 
 /* Popup styling */
@@ -273,6 +272,12 @@ filter:brightness(85%)
     padding: 20px;
     overflow-y: auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profileBackground {
+    width: 300px;
+    height: auto;
+    position: relative;
 }
 
 .profilePopup h2, .profilePopup h3, .profilePopup h1 {
