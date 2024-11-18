@@ -14,7 +14,29 @@
 <div class="triggers"> 
 <h2>TRIGGERS</h2>
 
-<h3>Overall Card</h3>
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse Up</li>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse Up</li>
+    </ul>
+
+<h3>Photo Card</h3>
     <p>Default</p>
     <ul> 
         <li>Hover ON</li>
@@ -53,23 +75,74 @@
         <li>Mouse Down</li>
         <li>Mouse Up</li>
     </ul>
+
 </div>
 
 
 <div class="rules">
 <h2>RULES</h2>
 
-<h3>Overall Card</h3>
+
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Text becomes underlined</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Text underline is removed</li>
+            </ul>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button circle background saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button circle background saturation decreases by 25%</li>
+            </ul>
+        <li>Mouse Click</li>
+            <ul>
+                <li>Button onclick popup toggle on</li>
+            </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Mouse Click</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+    </ul>
+
+    <h3>Photo Card</h3>
     <ul> 
         <li>Hover ON</li>
             <ul>
                 <li>Cursor changes to finger</li>
                 <li>Card color value increases by 25%</li>
+                <li>Save button, Profile button, download button, and settings button appear</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
                 <li>Card color value increases by 25%</li>
+                <li>Save button, Profile button, download button, and settings button disappear</li>
             </ul>
     </ul>
 
@@ -84,7 +157,7 @@
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
-                <li>Button saturation returns to original decreases by 25% </li>
+                <li>Button saturation decreases by 25% </li>
             </ul>
         <li>Mouse Down</li>
             <ul>
@@ -164,7 +237,57 @@
 <div class="feedback">
 <h2>FEEDBACK</h2>
 
-<h3>Overall Card</h3>
+
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Text becomes underlined</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Text underline is removed</li>
+            </ul>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button circle background saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button circle background saturation decreases by 25%</li>
+            </ul>
+        <li>Mouse Click</li>
+            <ul>
+                <li>Share/More settings popup appears</li>
+                <li>Button onclick popup toggle on</li>
+            </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Mouse Click</li>
+            <ul>
+                <li>Share/More settings popup disappears</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+    </ul>
+
+<h3>Photo Card</h3>
     <ul> 
         <li>Hover ON</li>
             <ul>
@@ -191,7 +314,7 @@
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
-                <li>Button saturation returns to original decreases by 25% </li>
+                <li>Button saturation decreases by 25% </li>
             </ul>
         <li>Mouse Down</li>
             <ul>
@@ -276,13 +399,14 @@
         <li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
         <li>When "Save" is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
         <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li> 
+        <li>When More button (...) is clicked, a popup appears with pin options</li>
     </ul>
 </div>
 </div>
 
 <section class="video">
     <video width="500px" controls>
-        <source src="./images/betaScreenRecord.mov" type="video/mp4">
+        <source src="./images/finalScreenRecord.mov" type="video/mp4">
     </video>
 </section>
 
