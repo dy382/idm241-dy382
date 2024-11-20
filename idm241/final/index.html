@@ -26,14 +26,15 @@
     <ul> 
         <li>Hover ON</li>
         <li>Hover OFF</li>
-        <li>Mouse Up</li>
+        <li>Mouse UP</li>
     </ul>
 
     <p>Active</p>
     <ul> 
         <li>Hover ON</li>
         <li>Hover OFF</li>
-        <li>Mouse Up</li>
+        <li>Mouse UP</li>
+        <li>Mouse OFF</li>
     </ul>
 
 <h3>Photo Card</h3>
@@ -49,16 +50,16 @@
     <ul> 
         <li>Hover ON</li>
         <li>Hover OFF</li>
-        <li>Mouse Down</li>
-        <li>Mouse Up</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
     </ul>
 
     <p>Active</p>
     <ul> 
         <li>Hover ON</li>
         <li>Hover OFF</li>
-        <li>Mouse Down</li>
-        <li>Mouse Up</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
     </ul>
 
 <h3>Profile</h3>
@@ -66,14 +67,16 @@
     <ul> 
         <li>Hover ON</li>
         <li>Hover OFF</li>
-        <li>Mouse Down</li>
-        <li>Mouse Up</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
     </ul>
 
     <p>Active</p>
     <ul>
-        <li>Mouse Down</li>
-        <li>Mouse Up</li>
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
     </ul>
 
 </div>
@@ -104,70 +107,80 @@
         <li>Hover ON</li>
             <ul>
                 <li>Cursor changes to finger</li>
-                <li>Button circle background saturation increases by 25%</li>
+                <li>Button background saturation increases by 25%</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
-                <li>Button circle background saturation decreases by 25%</li>
+                <li>Button background saturation decreases by 25%</li>
             </ul>
-        <li>Mouse Click</li>
+        <li>Mouse UP</li>
             <ul>
-                <li>Button onclick popup toggle on</li>
+                <li>More/Share settings popup appears</li>
+                <li>Button onclick popup toggle ON</li>
             </ul>
     </ul>
 
     <p>Active</p>
     <ul> 
         <li>Hover ON</li>
+                <li>Cursor changes to finger</li>
         <li>Hover OFF</li>
             <ul>
-                <li>Cursor changes to finger</li>
+                <li>Cursor changes to pointer</li>
             </ul>
-        <li>Mouse Click</li>
+        <li>Mouse UP</li>
+            <ul>
+                <li>More/Share settings popup disappears</li>
+                <li>Button onclick popup toggle OFF</li>
+            </ul>
+        <li>Mouse OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
             </ul>
     </ul>
 
-    <h3>Photo Card</h3>
+<h3>Photo Card</h3>
     <ul> 
         <li>Hover ON</li>
             <ul>
                 <li>Cursor changes to finger</li>
                 <li>Card color value increases by 25%</li>
-                <li>Save button, Profile button, download button, and settings button appear</li>
+                <li>Save button and Profile button appear</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
                 <li>Card color value increases by 25%</li>
-                <li>Save button, Profile button, download button, and settings button disappear</li>
+                <li>Save button and Profile button disappear</li>
             </ul>
     </ul>
 
-<h3>Save</h3>
+<h3>Bookmark</h3>
     <p>Default</p>
     <ul>
         <li>Hover ON</li>
             <ul>
                 <li>Cursor changes to finger</li>
-                <li>Button saturation increases by 25%</li>
+                <li>Bookmark Icon increases saturation by 25%</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
-                <li>Button saturation decreases by 25% </li>
+                <li>Bookmark Icon decreases saturation by 25% </li>
             </ul>
         <li>Mouse Down</li>
             <ul>
                 <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
             </ul>
         <li>Mouse Up</li>
             <ul>
-                <li>Button color changes to black with the words "Saved"</li>
-                <li>Button returns to original size</li>
-                <li>Button onclick popup toggle on</li>
+                <li>Cursor changes to finger</li>
+                <!-- <li>Button color changes to black with the words "Saved"</li> 
+                    <li>Button onclick popup toggle on</li>-->
+                <li>Button increase by 25%</li>
+                <li>Bookmark Icon is filled in red</li>
                 <li>Database record flag set to TRUE</li>
             </ul>   
     </ul>
@@ -187,9 +200,11 @@
         </ul>
     <li>Mouse Up</li>
         <ul>
-            <li>Button color changes back to red with the words "Save"</li>
-            <li>Button returns to original size</li>
-            <li>Button onclick popup toggle on</li>
+            <li>Cursor changes to pointer</li>
+             <!-- <li>Button color changes back to red with the words "Save"</li>
+            <li>Button onclick popup toggle on</li> -->
+            <li>Button increase by 25%</li>
+            <li>Bookmark Icon is reset to white</li>
             <li>Database record flag set to FALSE</li>
         </ul>   
 </ul>
@@ -199,37 +214,50 @@
     <ul> 
         <li>Hover ON</li>
             <ul>
+                <li>Cursor changes to finger</li>
                 <li>background opacity increases by 25%</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
+                <li>Cursor changes to pointer</li>
                 <li>background opacity decreases by 25%</li>
             </ul>
-        <li>Mouse Down</li>
-                <ul>
-            <li>Button size decreases by 25%</li>
-                </ul>
-        <li>Mouse Up</li>
-                <ul>
-            <li>background increases to 100% black opacity</li>
-            <li>Button onclick popup toggle on</li>
-            <li>Save board pops up</li>
-            <li>"Saved to Profile" popup appears on screen bottom</li>
-                </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button size increases by 25%</li>
+                <li>background opacity increases by 45%</li>
+                <li>"Save" board pops up</li>
+                <li>Button onclick popup toggle ON</li>
+            </ul>
     </ul>
 
     <p>Active</p>
     <ul>
-        <li>Mouse Down</li>
-                <ul>
-            <li>Button size decreases by 25%</li>
-                </ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>"Save" board disappears</li>
+                <li>Button onclick popup toggle OFF</li>
+            </ul>
         <li>Mouse Up</li>
-                <ul>
-            <li>background opacity returns to 0%</li>
-            <li>Button onclick popup toggle off</li>
-            <li>"Pin Removed" popup appears on screen bottom</li>
-                </ul>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity returns to 0%</li>
+            </ul>
     </ul>
 
 </div>
@@ -266,23 +294,28 @@
                 <li>Cursor changes to pointer</li>
                 <li>Button circle background saturation decreases by 25%</li>
             </ul>
-        <li>Mouse Click</li>
+        <li>Mouse UP</li>
             <ul>
-                <li>Share/More settings popup appears</li>
-                <li>Button onclick popup toggle on</li>
+                <li>More/Share settings popup appears</li>
             </ul>
     </ul>
 
     <p>Active</p>
     <ul> 
         <li>Hover ON</li>
-        <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to finger</li>
             </ul>
-        <li>Mouse Click</li>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
             <ul>
                 <li>Share/More settings popup disappears</li>
+            </ul>
+        <li>Mouse OFF</li>
+            <ul>
                 <li>Cursor changes to pointer</li>
             </ul>
     </ul>
@@ -293,42 +326,96 @@
             <ul>
                 <li>Cursor changes to finger</li>
                 <li>Card color value increases by 25%</li>
-                <li>Save button, Profile button, download button, and settings button appear</li>
+                <li>Save button and Profile button appear</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
                 <li>Card color value increases by 25%</li>
-                <li>Save button, Profile button, download button, and settings button disappear</li>
+                <li>Save button and Profile button disappear</li>
             </ul>
     </ul>
 
-    <h3>Save</h3>
+<h3>Bookmark</h3>
     <p>Default</p>
     <ul>
         <li>Hover ON</li>
             <ul>
                 <li>Cursor changes to finger</li>
-                <li>Button saturation increases by 25%</li>
+                <li>Bookmark Icon increases saturation by 25%</li>
             </ul>
         <li>Hover OFF</li>
             <ul>
                 <li>Cursor changes to pointer</li>
-                <li>Button saturation decreases by 25% </li>
+                <li>Bookmark Icon decreases saturation by 25% </li>
             </ul>
         <li>Mouse Down</li>
             <ul>
                 <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
             </ul>
         <li>Mouse Up</li>
             <ul>
-                <li>Button color changes to black with the words "Saved"</li>
-                <li>Button returns to original size</li>
-                <li>"Saved to Profile" popup appears on screen bottom</li>
+                <li>Cursor changes to finger</li>
+                <!-- <li>Button color changes to black with the words "Saved"</li> 
+                    <li>Button onclick popup toggle on</li>-->
+                <li>Button increase by 25%</li>
+                <li>Bookmark Icon is filled in red</li>
             </ul>   
     </ul>
+<p>Active</p>
+<ul>
+    <li>Hover ON</li>
+        <ul>
+            <li>Cursor changes to finger</li>
+        </ul>
+    <li>Hover OFF</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+        </ul>
+    <li>Mouse Down</li>
+        <ul>
+            <li>Button size decreases by 25%</li>
+        </ul>
+    <li>Mouse Up</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+             <!-- <li>Button color changes back to red with the words "Save"</li>
+            <li>Button onclick popup toggle on</li> -->
+            <li>Button increase by 25%</li>
+            <li>Bookmark Icon is reset to white</li>
+        </ul>   
+</ul>
 
-    <p>Active</p>
+
+<h3>Profile</h3>
+<p>Default</p>    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>background opacity increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity decreases by 25%</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button size increases by 25%</li>
+                <li>background opacity increases by 45%</li>
+                <li>"Save" board pops up</li>
+                <li>Button onclick popup toggle ON</li>
+            </ul>
+    </ul>
+
+<p>Active</p>
     <ul>
         <li>Hover ON</li>
             <ul>
@@ -338,52 +425,19 @@
             <ul>
                 <li>Cursor changes to pointer</li>
             </ul>
-        <li>Mouse Down</li>
+        <li>Mouse DOWN</li>
             <ul>
                 <li>Button size decreases by 25%</li>
+                <li>"Save" board disappears</li>
+                <li>Button onclick popup toggle OFF</li>
             </ul>
         <li>Mouse Up</li>
             <ul>
-                <li>Button color changes back to red with the words "Save"</li>
-                <li>Button returns to original size</li>
-                <li>"Pin Removed" popup appears on screen bottom</li>
-            </ul>   
+                <li>Cursor changes to pointer</li>
+                <li>background opacity returns to 0%</li>
+            </ul>
     </ul>
 
-
-<h3>Profile</h3>
-<p>Default</p>
-<ul> 
-    <li>Hover ON</li>
-        <ul>
-            <li>background opacity increases by 25%</li>
-        </ul>
-    <li>Hover OFF</li>
-        <ul>
-            <li>background opacity decreases by 25%</li>
-        </ul>
-    <li>Mouse Down</li>
-            <ul>
-        <li>Button size decreases by 25%</li>
-            </ul>
-    <li>Mouse Up</li>
-            <ul>
-        <li>background increases to 100% black opacity</li>
-        <li>Save board pops up</li>
-            </ul>
-</ul>
-
-<p>Active</p>
-<ul>
-    <li>Mouse Down</li>
-            <ul>
-        <li>Button size decreases by 25%</li>
-            </ul>
-    <li>Mouse Up</li>
-            <ul>
-        <li>background opacity returns to 0%</li>
-            </ul>
-</ul>
 
 </div>
 
@@ -396,10 +450,11 @@
     </ul>
 <p>Modes</p>
     <ul> 
-        <li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
-        <li>When "Save" is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
-        <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li> 
-        <li>When More button (...) is clicked, a popup appears with pin options</li>
+    <!--<li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
+        <li>When Bookmark button is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
+        <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li>  -->
+        <li>When More "..." button is clicked, a popup appears with setting and share options</li>
+        <li>When Profile is clicked, a Save popup appears</li>
     </ul>
 </div>
 </div>
