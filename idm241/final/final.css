@@ -83,31 +83,27 @@ p {
     border-radius: 30px;
 }
 
+.Save img {
+    width: 50px;
+}
 .Save {
     border: none;
-    color: white;
-    background-color:#e60023;
-    padding: 16px 20px;
-    border-radius: 30px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    background-color: none;
     cursor: pointer;
+    background: none;
 }
 
 .Save:hover {
-    background-color: #B60000;
+    background-image: url(/idm241/idm241/final/images/bookmarkhover.png);
 }
 
 .Save:active {
     transform: scale(0.9);
 }
 
-.Save.clicked {
-    background-color: black;
-}
+
 .popup {
     position: absolute;
     bottom: 20px;

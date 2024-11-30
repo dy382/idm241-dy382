@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./final.css">
+    <title>Final Description</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<h1>Final Build</h1>
+<p>url: <a href="https://www.pinterest.com/" target="_blank">https://www.pinterest.com/</a></p>
+
+
+
+<div class="container">
+<center>    
+<div class="pre-container">
+<section class="beta-card">
+    
+    <img src="./images/naturepic.jpg" alt="Nature scene" class="card-image">
+
+    <div class="card-header">    
+        <button id="profileButton" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
+        <button id="saveButton" class="Save"><img src="./images/bookmarkdefault.png"></i></button>
+      </div>
+      
+      <div class="card-footer">
+        <img src="./images/user-profile.jpg" alt="User Profile" class="user-avatar">
+        <span class="username">Ofelia Barton</span>
+        <button class="three-dots"><i class="fas fa-ellipsis-h"></i></button>
+      </div>
+
+</section>
+
+<div class="profile-popup-background hidden" id="profilePopup">
+    <div class="profilePopup">
+        <h1>Save</h1>
+        <input type="text" placeholder="Search">
+        <h2>Top choices</h2>
+
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Drawing Thumbnail">
+            <h3>Drawing</h3>
+        </div>
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Inspiration Thumbnail">
+            <h3>Inspiration</h3>
+        </div>
+
+        <h2>All boards</h2>
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Asiacore Thumbnail">
+            <h3>Asiacore</h3>
+        </div>
+
+        <div class="create-board">
+            <img src="./images/boardcover.jpg" alt="Create Board Icon">
+            <h3>Create board</h3>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="profileBackground" id="profileBackground">
+    </div>
+    
+</div>
+
+</center>
+
+</div>
+
+<div id="savePopup" class="popup hidden">
+    <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
+</div>
+
+<div class="grid-container">
+<div class="triggers"> 
+<h2>TRIGGERS</h2>
+
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse UP</li>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse UP</li>
+        <li>Mouse OFF</li>
+    </ul>
+
+<h3>Photo Card</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+    </ul>
+
+
+<h3>Save</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
+    </ul>
+
+<h3>Profile</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Hover ON</li>
+        <li>Hover OFF</li>
+        <li>Mouse DOWN</li>
+        <li>Mouse UP</li>
+    </ul>
+
+</div>
+
+
+<div class="rules">
+<h2>RULES</h2>
+
+
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Text becomes underlined</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Text underline is removed</li>
+            </ul>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button background saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button background saturation decreases by 25%</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>More/Share settings popup appears</li>
+                <li>Button onclick popup toggle ON</li>
+            </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+                <li>Cursor changes to finger</li>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>More/Share settings popup disappears</li>
+                <li>Button onclick popup toggle OFF</li>
+            </ul>
+        <li>Mouse OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+    </ul>
+
+<h3>Photo Card</h3>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button and Profile button appear</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button and Profile button disappear</li>
+            </ul>
+    </ul>
+
+<h3>Bookmark</h3>
+    <p>Default</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Bookmark Icon increases saturation by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Bookmark Icon decreases saturation by 25% </li>
+            </ul>
+        <li>Mouse Down</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <!-- <li>Button color changes to black with the words "Saved"</li> 
+                    <li>Button onclick popup toggle on</li>-->
+                <li>Button increase by 25%</li>
+                <li>Bookmark Icon is filled in red</li>
+                <li>Database record flag set to TRUE</li>
+            </ul>   
+    </ul>
+<p>Active</p>
+<ul>
+    <li>Hover ON</li>
+        <ul>
+            <li>Cursor changes to finger</li>
+        </ul>
+    <li>Hover OFF</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+        </ul>
+    <li>Mouse Down</li>
+        <ul>
+            <li>Button size decreases by 25%</li>
+        </ul>
+    <li>Mouse Up</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+             <!-- <li>Button color changes back to red with the words "Save"</li>
+            <li>Button onclick popup toggle on</li> -->
+            <li>Button increase by 25%</li>
+            <li>Bookmark Icon is reset to white</li>
+            <li>Database record flag set to FALSE</li>
+        </ul>   
+</ul>
+
+<h3>Profile</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>background opacity increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity decreases by 25%</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button size increases by 25%</li>
+                <li>background opacity increases by 45%</li>
+                <li>"Save" board pops up</li>
+                <li>Button onclick popup toggle ON</li>
+            </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>"Save" board disappears</li>
+                <li>Button onclick popup toggle OFF</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity returns to 0%</li>
+            </ul>
+    </ul>
+
+</div>
+
+<div class="feedback">
+<h2>FEEDBACK</h2>
+
+
+<h3>Username</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Text becomes underlined</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Text underline is removed</li>
+            </ul>
+    </ul>
+
+<h3>More</h3>
+    <p>Default</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button circle background saturation increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Button circle background saturation decreases by 25%</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>More/Share settings popup appears</li>
+            </ul>
+    </ul>
+
+    <p>Active</p>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>Share/More settings popup disappears</li>
+            </ul>
+        <li>Mouse OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+    </ul>
+
+<h3>Photo Card</h3>
+    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button and Profile button appear</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Card color value increases by 25%</li>
+                <li>Save button and Profile button disappear</li>
+            </ul>
+    </ul>
+
+<h3>Bookmark</h3>
+    <p>Default</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Bookmark Icon increases saturation by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Bookmark Icon decreases saturation by 25% </li>
+            </ul>
+        <li>Mouse Down</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <!-- <li>Button color changes to black with the words "Saved"</li> 
+                    <li>Button onclick popup toggle on</li>-->
+                <li>Button increase by 25%</li>
+                <li>Bookmark Icon is filled in red</li>
+            </ul>   
+    </ul>
+<p>Active</p>
+<ul>
+    <li>Hover ON</li>
+        <ul>
+            <li>Cursor changes to finger</li>
+        </ul>
+    <li>Hover OFF</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+        </ul>
+    <li>Mouse Down</li>
+        <ul>
+            <li>Button size decreases by 25%</li>
+        </ul>
+    <li>Mouse Up</li>
+        <ul>
+            <li>Cursor changes to pointer</li>
+             <!-- <li>Button color changes back to red with the words "Save"</li>
+            <li>Button onclick popup toggle on</li> -->
+            <li>Button increase by 25%</li>
+            <li>Bookmark Icon is reset to white</li>
+        </ul>   
+</ul>
+
+
+<h3>Profile</h3>
+<p>Default</p>    <ul> 
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>background opacity increases by 25%</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity decreases by 25%</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse UP</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+                <li>Button size increases by 25%</li>
+                <li>background opacity increases by 45%</li>
+                <li>"Save" board pops up</li>
+                <li>Button onclick popup toggle ON</li>
+            </ul>
+    </ul>
+
+<p>Active</p>
+    <ul>
+        <li>Hover ON</li>
+            <ul>
+                <li>Cursor changes to finger</li>
+            </ul>
+        <li>Hover OFF</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Mouse DOWN</li>
+            <ul>
+                <li>Button size decreases by 25%</li>
+                <li>"Save" board disappears</li>
+                <li>Button onclick popup toggle OFF</li>
+            </ul>
+        <li>Mouse Up</li>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>background opacity returns to 0%</li>
+            </ul>
+    </ul>
+
+
+</div>
+
+<div class="loopsModes"> 
+    <h2>LOOPS AND MODES</h2>
+    
+<p>Loops</p>
+    <ul>
+        <li>none</li>
+    </ul>
+
+<h3>More</h3>
+
+<p>Modes</p>
+    <ul> 
+    <!--<li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
+        <li>When Bookmark button is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
+        <li>When "Unsave" is clicked, another PopUp with the text "Pin Removed!" appears</li>  -->
+        <li>When More "..." button is clicked, a popup appears with setting and share options</li>
+    </ul>
+
+<h3>Profile</h3>
+
+<p>Modes</p>
+    <ul>
+        <li>When Profile is clicked, a Save popup appears</li>
+    </ul>
+</div>
+</div>
+
+<section class="video">
+    <video width="500px" controls>
+        <source src="./images/finalScreenRecord.mov" type="video/mp4">
+    </video>
+</section>
+
+</body>
+</html>
