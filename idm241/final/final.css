@@ -135,18 +135,14 @@ margin: 30px;
   
 }
 
-.beta-card:hover {
-
-}
-
-.card-image:hover {
-    filter:brightness(85%)
+.box-card {
+    position: absolute;
 }
 
 /* Card Header */
 
 .card-header {
-  pointer-events: none;
+  /* pointer-events: none; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,14 +150,19 @@ margin: 30px;
   position: absolute;
   top: 0;
   width: 90%;
-  visibility: hidden;
+ visibility: hidden;
   opacity: 0;        
   transition: visibility 0s, opacity 0.1s ease-in-out;
+  z-index: 1000;
 }
 
-.beta-card:hover .card-header {
+.box-card:hover .card-header {
     visibility: visible;
     opacity: 1;   
+  }
+
+  .box-card:hover {
+    filter:brightness(85%)
   }
 
 /* Profile Dropdown */
@@ -182,7 +183,7 @@ margin: 30px;
 }
 
 .profile:hover {
-    background-color: rgba( 0,0,0,0.2 );
+    background-color: rgba( 0,0,0,0.4 );
 }
 
 .profile:active {
@@ -228,6 +229,7 @@ margin: 30px;
   gap: 10px;
   margin: 10px;
   align-items: center;
+  top: 450px;
 }
 
 .user-profile {
@@ -237,11 +239,10 @@ margin: 30px;
 }
 
 .username:hover {
-    border-bottom: 1px black;
+    border-bottom: solid 1px black;
 }
 
 .more {
-    
     width: 20px;
     padding: 7px;
     border-radius: 100px;
@@ -283,4 +284,5 @@ margin: 30px;
     height: 450px;
     border-radius: 12px;
     display: block;
+    position: relative;
 }
