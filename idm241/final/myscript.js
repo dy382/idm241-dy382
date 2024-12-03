@@ -24,3 +24,4 @@ document.getElementById('profileButton').addEventListener('click', function() {
         profileBackground.classList.remove('hidden');
     }
 });
+

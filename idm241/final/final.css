@@ -83,27 +83,6 @@ p {
     border-radius: 30px;
 }
 
-.Save img {
-    width: 50px;
-}
-.Save {
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    background-color: none;
-    cursor: pointer;
-    background: none;
-}
-
-.Save:hover {
-    background-image: url(/idm241/idm241/final/images/bookmarkhover.png);
-}
-
-.Save:active {
-    transform: scale(0.9);
-}
-
-
 .popup {
     position: absolute;
     bottom: 20px;
@@ -145,23 +124,29 @@ p {
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 0;
+margin: 30px;
 }
 
 .beta-card {
   width: 250px;
   height: 450px;
   border-radius: 12px;
-  overflow: hidden;
   position: relative;
+  
 }
 
 .beta-card:hover {
-filter:brightness(85%)
+
+}
+
+.card-image:hover {
+    filter:brightness(85%)
 }
 
 /* Card Header */
+
 .card-header {
+  pointer-events: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +154,15 @@ filter:brightness(85%)
   position: absolute;
   top: 0;
   width: 90%;
+  visibility: hidden;
+  opacity: 0;        
+  transition: visibility 0s, opacity 0.1s ease-in-out;
 }
+
+.beta-card:hover .card-header {
+    visibility: visible;
+    opacity: 1;   
+  }
 
 /* Profile Dropdown */
 .profile {
@@ -184,6 +177,8 @@ filter:brightness(85%)
   margin: 4px 2px;
   cursor: pointer;
   background: none;
+  position: relative; /* Ensure it remains in place */
+  z-index: 10; /* Make sure it's above other elements */
 }
 
 .profile:hover {
@@ -204,13 +199,57 @@ filter:brightness(85%)
     justify-content: center;
 }
 
+.Save img {
+    width: 50px;
+}
+.Save {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background: none; /* Fix invalid CSS */
+    cursor: pointer;
+    position: relative; /* Ensure it remains in place */
+    z-index: 10; /* Ensure it's clickable above other elements */
+}
+
+.Save:hover {
+    background-image: url(/idm241/idm241/final/images/bookmarkhover.png);
+}
+
+.Save:active {
+    transform: scale(0.9);
+}
+
+
 /* Card Footer */
 .card-footer {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
   display: flex;
   gap: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+.user-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.username:hover {
+    border-bottom: 1px black;
+}
+
+.more {
+    
+    width: 20px;
+    padding: 7px;
+    border-radius: 100px;
+    background-color: gainsboro;
+}
+
+.more:hover {
+    filter:brightness(85%)
 }
 
 /* Icon Buttons */
@@ -237,4 +276,11 @@ filter:brightness(85%)
 
 .icon-button:active {
     transform: scale(0.9);
+}
+
+.card-image {
+    width: 250px;
+    height: 450px;
+    border-radius: 12px;
+    display: block;
 }
