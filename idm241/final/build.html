@@ -18,7 +18,7 @@
 
         <div class="card-header">    
             <button id="profileButton" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
-            <button id="saveButton" class="Save"><img src="./images/bookmarkdefault.png"></i></button>
+            <button id="saveButton" class="Save"><img src="./images/bookmarkdefault.png" id="defaultBookmark"><img src="./images/bookmarkactive.png" id="activeBookmark"><img src="./images/bookmarkhover.png" id="hoverBookmark"></i></button>
         </div>
 
     
@@ -28,7 +28,7 @@
     <div class="card-footer">
         <img src="./images/userprofile.png" alt="User Profile" class="user-profile">
         <span class="username">Ofelia Barton</span>
-        <img src="./images/more.png" class="more">
+        <button id="moreButton" class="more"><img src="./images/more.png"></button>
       </div>
 
 </section>
@@ -61,15 +61,43 @@
     </div>
     </div>
 
-
+<!-- 
     <div class="profileBackground" id="profileBackground">
-    </div>
+    </div> -->
 
 </div>
 
 
 <div id="savePopup" class="popup hidden">
     <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
+</div>
+
+<div id="morePopup" class="more-popup hidden">
+    <p>This Pin was inspired by your recent activity</p>
+    <h2>Hide Pin</h2>
+    <h2>Download image</h2>
+    <h2>Report Pin</h2>
+    <div class="Share">
+        <p>Share</p>
+        <div class="share-flex">
+            <div class="doyeon">
+                <img src="./images/boardcover.jpg" alt="Asiacore Thumbnail">
+                <p>Doyeon</p>
+            </div>
+            <div class="julia">
+                <img src="./images/julia.jpg" alt="julia pfp">
+                <p>Julia</p>
+            </div>
+            <div class="copylink">
+                <img src="./images/link.png" alt="copy link">
+                <p>Copy Link</p>
+            </div>
+            <div class="facebook">
+                <img src="./images/boardcover.jpg" alt="Asiacore Thumbnail">
+                <p>Facebook</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="grid-container">
@@ -535,6 +563,8 @@
         <source src="./images/finalScreenRecord.mov" type="video/mp4">
     </video>
 </section>
+
+<script src="myscript.js"></script>
 
 </body>
 </html>

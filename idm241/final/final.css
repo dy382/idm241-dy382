@@ -178,8 +178,8 @@ margin: 30px;
   margin: 4px 2px;
   cursor: pointer;
   background: none;
-  position: relative; /* Ensure it remains in place */
-  z-index: 10; /* Make sure it's above other elements */
+  position: relative;
+  z-index: 10;
 }
 
 .profile:hover {
@@ -242,16 +242,6 @@ margin: 30px;
     border-bottom: solid 1px black;
 }
 
-.more {
-    width: 20px;
-    padding: 7px;
-    border-radius: 100px;
-    background-color: gainsboro;
-}
-
-.more:hover {
-    filter:brightness(85%)
-}
 
 /* Icon Buttons */
 .icon-button {
@@ -285,4 +275,113 @@ margin: 30px;
     border-radius: 12px;
     display: block;
     position: relative;
+}
+
+/* Popup styling */
+.profile-popup-background {
+    position: absolute;
+    top: 225px;
+}
+
+.profilePopup {
+    width: 300px;
+    max-height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+.profileBackground {
+    width: 300px;
+    height: auto;
+    position: relative;
+} */
+
+.profilePopup h2, .profilePopup h3, .profilePopup h1 {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.profilePopup .option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.profilePopup .option img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.profilePopup .option h3 {
+    font-size: 18px;
+    color: #000;
+}
+
+.profilePopup .create-board {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup .create-board:hover {
+    background-color: #f1f1f1;
+}
+
+.profilePopup .create-board img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*more button*/
+.more img {
+    width: 15px;
+    padding: 7px;
+    border-radius: 100px;
+    background-color: gainsboro;
+}
+
+.more {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    position:relative;
+    right: -50px;
+}
+
+.more:hover {
+    filter:brightness(85%)
+}
+
+.more-popup {
+    position: absolute;
+    top: 225px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Share img {
+    width: 50px;
+    height: auto;
+    border-radius: 1000px;
+}
+
+.Share p {
+    text-align: center;
+}
+
+.share-flex {
+    display: flex;
 }
