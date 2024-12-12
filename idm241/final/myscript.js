@@ -6,11 +6,13 @@ document.getElementById('saveButton').addEventListener('click', function() {
     let hoverBookmark = document.getElementById('hoverBookmark');
 
     if (this.classList.contains('clicked')) {
-        this.textContent = 'Saved';
+        // this.textContent = 'Saved';
         savePopup.classList.remove('hidden');
+        defaultBookmark.classList.add('hidden');
+        activeBookmark.classList.remove('hidden');
         
     } else {
-        this.textContent = 'Save';
+        // this.textContent = 'Save';
         savePopup.classList.add('hidden');
     }
 });
