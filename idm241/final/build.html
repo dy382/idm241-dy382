@@ -20,7 +20,6 @@
             <button id="profileButton" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
             <button id="saveButton" class="Save"><img src="./images/bookmarkdefault.png" id="defaultBookmark" class="defaultBookmark"><img src="./images/bookmarkactive.png" id="activeBookmark" class="activeBookmark hidden"><img src="./images/bookmarkhover.png" id="hoverBookmark" class="hoverBookmark hidden"></i></button>
         </div>
-
     
     <img src="./images/thumbnail.jpg" alt="nature bathroom" class="card-image">
     </div>    
@@ -91,12 +90,97 @@
     </div>
 
 
-</div>
+<!-- second beta -->
 
+
+<section class="beta-card1">
+    <div class="box-card">
+
+        <div class="card-header">    
+            <button id="profileButton1" class="profile">Profile <img src="./images/down-arrow.png"></i></button>
+            <button id="saveButton1" class="Save"><img src="./images/bookmarkdefault.png" id="defaultBookmark1" class="defaultBookmark"><img src="./images/bookmarkactive.png" id="activeBookmark1" class="activeBookmark hidden"><img src="./images/bookmarkhover.png" id="hoverBookmark1" class="hoverBookmark hidden"></i></button>
+        </div>
+    
+    <img src="./images/naturepic.jpg" alt="nature bathroom" class="card-image">
+    </div>    
+
+    <div class="card-footer">
+        <img src="./images/userprofile.png" alt="User Profile" class="user-profile">
+        <span class="username">Lucia Garzon</span>
+        <button id="moreButton1" class="more"><img src="./images/more.png"></button>
+      </div>
+
+</section>
+
+<div class="profile-popup-background1 hidden" id="profilePopup1">
+    <div class="profilePopup1">
+        <h1>Save</h1>
+        <input type="text" placeholder="Search">
+        <h2>Top choices</h2>
+
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Drawing Thumbnail">
+            <h3>Drawing</h3>
+        </div>
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Inspiration Thumbnail">
+            <h3>Inspiration</h3>
+        </div>
+
+        <h2>All boards</h2>
+        <div class="option">
+            <img src="./images/boardcover.jpg" alt="Asiacore Thumbnail">
+            <h3>Asiacore</h3>
+        </div>
+
+        <div class="create-board">
+            <img src="./images/boardcover.jpg" alt="Create Board Icon">
+            <h3>Create board</h3>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="morePopup1" class="more-popup1 hidden">
+        <p>This Pin was inspired by your recent activity</p>
+        <h2>Hide Pin</h2>
+        <h2>Download image</h2>
+        <h2>Report Pin</h2>
+        <div class="Share">
+            <p>Share</p>
+            <div class="share-flex">
+                <div class="doyeon">
+                    <img src="./images/userprofile.png" alt="Asiacore Thumbnail">
+                    <p>Doyeon</p>
+                </div>
+                <div class="julia">
+                    <img src="./images/julia.png" alt="julia pfp">
+                    <p>Julia</p>
+                </div>
+                <div class="copylink">
+                    <img src="./images/link.png" alt="copy link">
+                    <p>Copy Link</p>
+                </div>
+                <div class="facebook">
+                    <img src="./images/facebook.jpg" alt="Asiacore Thumbnail">
+                    <p>Facebook</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 
 <div id="savePopup" class="popup hidden">
     <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
 </div>
+
+<div id="savePopup1" class="popup hidden">
+    <img src="./images/boardcover.jpg" alt="water wheel board cover" class="cover">Saved to <br> Drawing<button id="undoButton" class="undo">Undo</button>
+</div>
+
+
 
 <div class="grid-container">
 <div class="triggers"> 
@@ -525,8 +609,13 @@
         <li>none</li>
     </ul>
 
-<h3>More</h3>
+    <h3>PhotoCard</h3>
+    <p>Modes</p>
+    <ul> 
+        <li>When Bookmark button is clicked, a PopUp with "Save to Profile 'Undo'" appears</li>
+    </ul>
 
+<h3>More</h3>
 <p>Modes</p>
     <ul> 
     <!--<li>When the user clicks on the photo card, a new screen appears as the user is navigated to full page of the content</li>
@@ -536,7 +625,6 @@
     </ul>
 
 <h3>Profile</h3>
-
 <p>Modes</p>
     <ul>
         <li>When Profile is clicked, a Save popup appears</li>

@@ -75,6 +75,12 @@ p {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .video video {
@@ -132,8 +138,16 @@ margin: 30px;
   height: 450px;
   border-radius: 12px;
   position: relative;
-  margin-right: 20px;
+  margin: 30px;
 }
+
+.beta-card1 {
+    width: 250px;
+    height: 450px;
+    border-radius: 12px;
+    position: relative;
+    margin: 30px;
+  }
 
 .box-card {
     position: absolute;
@@ -238,8 +252,12 @@ margin: 30px;
     border-radius: 100px;
 }
 
+.username {
+    border-bottom: solid 1px white;
+}
 .username:hover {
     border-bottom: solid 1px black;
+    cursor: pointer;
 }
 
 
@@ -281,10 +299,27 @@ margin: 30px;
 .profile-popup-background {
     position: absolute;
     top: 225px;
+    transform: translateX(-140px);
+}
+
+.profile-popup-background1 {
+    position: absolute;
+    top: 225px;
+    transform: translateX(140px);
 }
 
 .profilePopup {
-    width: 300px;
+    width: 250px;
+    max-height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profilePopup1 {
+    width: 250px;
     max-height: 80vh;
     background-color: white;
     border-radius: 15px;
@@ -300,8 +335,19 @@ margin: 30px;
     margin: 10px 0;
 }
 
+.profilePopup1 h2, .profilePopup1 h3, .profilePopup1 h1 {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+}
 
 .profilePopup .option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.profilePopup1 .option {
     display: flex;
     align-items: center;
     margin: 10px 0;
@@ -314,7 +360,19 @@ margin: 30px;
     margin-right: 10px;
 }
 
+.profilePopup1 .option img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
 .profilePopup .option h3 {
+    font-size: 18px;
+    color: #000;
+}
+
+.profilePopup1 .option h3 {
     font-size: 18px;
     color: #000;
 }
@@ -326,8 +384,11 @@ margin: 30px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.popup .create-board:hover {
-    background-color: #f1f1f1;
+.profilePopup1 .create-board {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .profilePopup .create-board img {
@@ -336,8 +397,22 @@ margin: 30px;
     margin-right: 10px;
 }
 
+.profilePopup1 .create-board img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
 
 .profilePopup input {
+    width: 100%;
+    padding: 10px 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.profilePopup1 input {
     width: 100%;
     padding: 10px 7px;
     margin-bottom: 20px;
@@ -352,8 +427,20 @@ margin: 30px;
     margin-bottom: 16px;
 }
 
+.profilePopup1 h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
 
 .profilePopup h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.profilePopup1 h2 {
     font-size: 16px;
     margin-bottom: 10px;
     color: #333;
@@ -428,8 +515,8 @@ margin: 30px;
 
 .more-popup {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 350px;
+    transform: translateX(-140px);
     width: fit-content;
     background: #fff;
     border: 1px solid #ddd;
@@ -438,6 +525,33 @@ margin: 30px;
     z-index: 100;
     padding: 20px;
     font-family: Arial, sans-serif;
+}
+
+.more-popup1 {
+    position: absolute;
+    top: 350px;
+    transform: translateX(140px);
+    width: fit-content;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.more-popup1 p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.more-popup1 h2 {
+    font-size: 14px;
+    color: #333;
+    margin: 15px 0;
+    cursor: pointer;
 }
 
 .more-popup p {
@@ -451,10 +565,6 @@ margin: 30px;
     color: #333;
     margin: 15px 0;
     cursor: pointer;
-}
-
-.more-popup h2:hover {
-    color: #e60023; /* Pinterest red */
 }
 
 .Share {
@@ -480,10 +590,6 @@ margin: 30px;
     width: 65px;
     gap: 5px;
     cursor: pointer;
-}
-
-.share-flex div:hover {
-    background: #f0f0f0;
 }
 
 .share-flex img {
