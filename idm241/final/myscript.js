@@ -1,19 +1,38 @@
-document.getElementById('saveButton').addEventListener('click', function() {
+const saveButton = document.getElementById('saveButton');
+const savePopup = document.getElementById('savePopup');
+const defaultBookmark = document.getElementById('defaultBookmark');
+const activeBookmark = document.getElementById('activeBookmark');
+const hoverBookmark = document.getElementById('hoverBookmark');
+
+// Toggle save state on click
+saveButton.addEventListener('click', function () {
     this.classList.toggle('clicked');
-    let savePopup = document.getElementById('savePopup');
-    let defaultBookmark = document.getElementById('defaultBookmark');
-    let activeBookmark = document.getElementById('activeBookmark');
-    let hoverBookmark = document.getElementById('hoverBookmark');
 
     if (this.classList.contains('clicked')) {
-        // this.textContent = 'Saved';
         savePopup.classList.remove('hidden');
-        defaultBookmark.classList.add('hidden');
+        dBookmark.classList.add('hidden');
         activeBookmark.classList.remove('hidden');
-        
+
     } else {
-        // this.textContent = 'Save';
         savePopup.classList.add('hidden');
+        defaultBookmark.classList.remove('hidden');
+        activeBookmark.classList.add('hidden');
+    }
+});
+
+// Show hoverBookmark on mouse over
+saveButton.addEventListener('mouseover', function () {
+    if (!saveButton.classList.contains('clicked')) {
+        defaultBookmark.classList.add('hidden');
+        hoverBookmark.classList.remove('hidden');
+    }
+});
+
+// Hide hoverBookmark on mouse out
+saveButton.addEventListener('mouseout', function () {
+    if (!saveButton.classList.contains('clicked')) {
+        hoverBookmark.classList.add('hidden');
+        defaultBookmark.classList.remove('hidden');
     }
 });
 
