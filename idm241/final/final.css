@@ -298,13 +298,13 @@ margin: 30px;
 /* Popup styling */
 .profile-popup-background {
     position: absolute;
-    top: 225px;
+    top: 250px;
     transform: translateX(-140px);
 }
 
 .profile-popup-background1 {
     position: absolute;
-    top: 225px;
+    top: 250px;
     transform: translateX(140px);
 }
 
@@ -539,6 +539,24 @@ margin: 30px;
     z-index: 100;
     padding: 20px;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 868px) {
+    .more-popup1 {
+        top:850px;
+        transform: translateX(0);
+    }
+    .more-popup {
+        transform: translateX(0);
+    }
+
+    .profile-popup-background1 {
+        top: 780px;
+        transform: translateX(0);
+    }
+    .profile-popup-background {
+        transform: translateX(0)
+    }
 }
 
 .more-popup1 p {
